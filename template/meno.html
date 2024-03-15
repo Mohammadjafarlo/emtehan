@@ -1,0 +1,25 @@
+{% load static %}
+<html lang="en">
+<head>
+    <style>
+        body{
+      background-image: linear-gradient(to right, rgb(255, 0, 0), #3d0000);
+}
+    </style>
+    <link href="{% static 'home.css' %}" rel="stylesheet">
+    <link href="{% static 'bootstrap-5.3.3-dist/css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'button.css' %}" rel="stylesheet">
+    <meta charset="UTF-8">
+
+</head>
+<body>
+
+    <div class="container-fluid text-center">
+        {% for mozo in mozoat%}
+            <a href="list/{{ mozo.esm_namayeshy }}"><button class="Raise"  style="background-image: linear-gradient(to left, rgb(183,0,0), rgb(147,0,0));">{{mozo.title}}</button></a>
+        {% endfor %}
+
+    </div>
+
+</body>
+</html>

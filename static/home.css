@@ -1,0 +1,12 @@
+{% load static %}
+
+.container{
+    margin-top: 50px;
+    border-radius:20px;
+    text-align: center;
+}
+.btn{
+    margin-top: 10px;
+    width: 41%!important;
+}
+
